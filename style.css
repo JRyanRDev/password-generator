@@ -46,6 +46,13 @@ section.container {
     font-family: 'Roboto', sans-serif;
 }
 
+@media (orientation: landscape) and (max-height: 350px) {
+    section.container {
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
 section.container h3 {
     text-align: center;
     padding-bottom: 10px;

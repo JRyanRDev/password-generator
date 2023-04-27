@@ -38,8 +38,8 @@ passwordLength.textContent = `${slider.value}`;
 
 slider.addEventListener("input", () => {
     passwordLength.textContent = `${slider.value}`;
-    return;
-}, false)
+    return
+}, true)
 
 
 function getUserChoice() {
