@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <title>Password generator</title>
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <section class="container">
+                <h3>Password generator</h3>
+                <div id="formDiv">
+                    <p>
+                        options:
+                    </p>
+                    <form action="#" id="passwordOptions">
+                        <div class="checkBoxSpace">
+                            <input type="checkbox" name="letters" id="iLetters">
+                            <label for="iLetters">Letters</label>
+                        </div>
+                        <div class="checkBoxSpace">
+                            <input type="checkbox" name="upperCase" id="iUpperCaseLetters">
+                            <label for="iUpperCaseLetters">Capital letters</label>
+                        </div>
+                        <div class="checkBoxSpace">
+                            <input type="checkbox" name="numbers" id="iNumbers">
+                            <label for="iNumbers">Numbers</label>
+                        </div>
+                        <div class="checkBoxSpace">
+                            <input type="checkbox" name="symbols" id="iSymbols">
+                            <label for="iSymbols">Symbols</label>
+                        </div>
+                        <div id="passLengthDiv">
+                            <p>Number of characters:</p>
+                            <div>
+                                <input type="range" name="passLength" id="iPassLength" min="6" max="20">
+                                <label for="iPassLength" id="lengthValue"></label>
+                            </div>
+                        </div>
+                        <input type="submit" value="Generate password" id="genButton">
+                    </form>
+                </div>
+                <div id="passwordSpace">
+                    <h3>Your new password will appear here</h3>
+                </div>
+            </section>
+        </div>
+    <script src="script.js">
+    </script>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --color1: #0CCCF8;
+    --color2: #0BD9C8;
+    --color3: #00EF98;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color2);
+}
+
+div#page-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    min-width: 250px;
+    width: 75vw;
+    max-width: 650px;
+    
+    padding: 20px;
+    border-radius: 5px;
+    
+    background-color: #fff;
+    box-shadow: 0 0 10px #0000004b;
+
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.container h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+div#formDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+div#passLengthDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 10px 0;
+}
+
+input#genButton {
+    margin-top: 20px;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    width: 100%;
+
+    background-color: var(--color3);
+}
+
+input#genButton:hover {
+    background-color: #01d487;
+    cursor: pointer;
+}
+
+div#passwordSpace {
+    font-size: 1.2rem;
+}
